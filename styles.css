@@ -1,13 +1,19 @@
 @font-face {
-    font-family: "SourceSansProLight";
-    src: url("Assets/Fonts/SourceSansProLight.woff") format("woff"),
-         url("Assets/Fonts/SourceSansProLight.woff") format("woff");
+    font-family: "onefont";
+    src: url("Assets/Fonts/onefont.woff") format("woff"),
+         url("Assets/Fonts/onefont.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "SourceSansProRegular";
-    src: url("Assets/Fonts/SourceSansProRegular.woff") format("woff"),
-         url("Assets/Fonts/SourceSansProRegular.woff") format("woff");
+    font-family: "twofont";
+    src: url("Assets/Fonts/twofont.woff") format("woff"),
+         url("Assets/Fonts/twofont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "threefont";
+    src: url("Assets/Fonts/threefont.woff") format("woff"),
+         url("Assets/Fonts/threefont.woff2") format("woff2");
 }
 
 * {
@@ -17,17 +23,17 @@
 html {
   min-height: 100vh;
   cursor: url(Assets/Cursors/NormalSelect.cur), auto;
-  font-family: SourceSansProRegular;
+  font-family: twofont;
 }
 
 body {
   margin: 0;
-  background: radial-gradient(#00FFFF, #77FF00);
+  background: radial-gradient(#BDB76B, #008080);
 }
 
 .page-title {
-  color: #5599FF;
-  font-family: SourceSansProLight, serif;
+  color: #483D8B;
+  font-family: onefont, serif;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
@@ -40,7 +46,7 @@ body {
 }
 
 .game-info {
-  color: #FFFFFF;
+  color: #FFA500;
   font-size: 4em;
 }
 
@@ -120,8 +126,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #33CC00;
-  font-family: SourceSansProLight, serif;
+  color: #7FFF00;
+  font-family: threefont, serif;
   transition: background-color 500ms, font-size 500ms;
 }
 
@@ -134,17 +140,7 @@ body {
   animation: overlay-grow 500ms forwards;
 }
 
-@keyframes dance {
-  0%, 100% {
-    transform: rotate(0)
-  }
-  25% {
-    transform: rotate(-30deg)
-  }
-  75% {
-    transform: rotate(30deg)
-  }
-}
+
 
 @keyframes overlay-grow {
   from {
